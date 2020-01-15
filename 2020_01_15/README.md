@@ -38,7 +38,7 @@ S NAME이라는 명령이 있을 때마다 NAME으로 주어진 파일명을 출
 
 I, C, L, V, H, K, F, S, X를 제외한 문자로 정의된 명령이 있으면 그 줄 전체를 무시하고 다음 명령으로 넘어간다. 다른 오류에 대해서는 프로그램의 행동을 예측할 수 없다.
 
-#### >> 입력											>> 출력
+#### >> 결과
 
 <img width="304" alt="스크린샷 2020-01-16 01 18 35" src="https://user-images.githubusercontent.com/50854729/72450804-4d84ef80-37fe-11ea-8774-f52f7e731ade.png">
 <img width="351" alt="스크린샷 2020-01-16 01 19 14" src="https://user-images.githubusercontent.com/50854729/72450972-9341b800-37fe-11ea-835d-445d7f9eacc3.png">
@@ -81,7 +81,7 @@ I, C, L, V, H, K, F, S, X를 제외한 문자로 정의된 명령이 있으면 �
 
 여기에서 <i>d</i>는 1에서 시작하는 게임 번호를 나타낸다.
 
-#### >> 입력 예										>> 출력 예
+#### >> 결과
 
 <img width="335" alt="스크린샷 2020-01-16 01 48 55" src="https://user-images.githubusercontent.com/50854729/72453634-c25a2880-3802-11ea-8db0-0a30f6ba961f.png">
 
