@@ -1,5 +1,6 @@
-min_val = int(input())
-max_val = int(input())
+input_temp = input().split()
+min_val = int(input_temp[0])
+max_val = int(input_temp[1])
 if min_val > max_val:
     tmp = min_val
     min_val = max_val

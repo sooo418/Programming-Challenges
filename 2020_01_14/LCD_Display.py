@@ -5,8 +5,11 @@ ver_bar = [" ", "|"]
 hor = [[1,0,1], [0,0,0], [1,1,1], [1,1,1], [0,1,0], [1,1,1], [1,1,1], [1,0,0], [1,1,1], [1,1,1]]
 ver = [[1,1,1,1], [0,1,0,1], [0,1,1,0], [0,1,0,1], [1,1,0,1], [1,0,0,1], [1,0,1,1], [0,1,0,1], [1,1,1,1], [1,1,0,1]]
 
-s = int(input('크기를 입력해주세요 : '))
-while s != 0:
+input_temp = input().split()
+s = int(input_temp[0])
+while True:
+    if s == 0 and input_temp[1] == '0':
+        break
     result = [[],[],[],[],[]]
     r = []
     tmp1 = ''
@@ -16,7 +19,7 @@ while s != 0:
         tmp2 += '-'
     hor_bar.append(tmp1)
     hor_bar.append(tmp2)
-    number = str(input('출력할 숫자를 입력해주세요 : '))
+    number = str(input_temp[1])
     num_digits = len(number)
     for i in range(num_digits):
         digit = int(number[i])
@@ -57,4 +60,5 @@ while s != 0:
         print(''.join(y))
     
     hor_bar = []
-    s = int(input('크기를 입력해주세요 : '))
+    input_temp = input().split()
+    s = int(input_temp[0]) 
