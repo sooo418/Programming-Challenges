@@ -1,5 +1,3 @@
-max_s = 10
-max_digits = 8
 hor_bar = []
 ver_bar = [" ", "|"]
 
