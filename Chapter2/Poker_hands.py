@@ -2,12 +2,13 @@ def get_value(x):
     return x // 10
 def get_suit(x):
     return x % 10
-black_hands_score = list()
-white_hands_score = list()
-black_value = list()
-white_value = list()
+black_hands_score = list()  # black카드의 족보와 비교할 카드의 값을 저장할 리스트
+white_hands_score = list()  # white카드의 족보와 비교할 카드의 값을 저장할 리스트
+black_value = list()        # black카드의 값들을 저장하는 리스트
+white_value = list()        # white카드의 값들을 저장하는 리스트
 hands = input().split()
 
+# 문자열 형태의 카드 값을 숫자 표현으로 변환
 def encode_card(card):
     result = 0
     if card[0] == 'T':
@@ -49,13 +50,13 @@ def get_hands_score(hands):
         result.append(9)
         result.append(value[0])
 
-    # 포카드
+    # 포카드 - 정렬된 상태이므로 카드를 일일히 세지 않고도 1,4번째 카드가 같거나 또는 2,5번째 카드가 같은지만 검사하면 된다.
     elif value[0] == value[3] or value[1] == value[4]:
         
         result.append(8)
         result.append(value[0])
 
-    # 풀하우스
+    # 풀하우스 - 2장+3장 또는 3장+2장 형태이므로 다음과 같이 아주 간단하게 검사할 수 있다.
     elif value[0] == value[2] and value[3] == value[4]:
         
         result.append(7)
@@ -89,7 +90,7 @@ def get_hands_score(hands):
         result.append(4)
         result.append(value[2])
 
-    # 투페어
+    # 투페어 - 다음과 같이 세가지 가능성만 존재한다.
     elif value[0] == value[1] and value[2] == value[3]:
 
         result.append(3)
@@ -178,6 +179,7 @@ while len(hands) != 0 and len(hands) == 10:
         else:
             white_value.append(encode_card(hands[i]))
 
+    # 패를 정렬해두면 족보 판정을 훨씬 쉽게 할 수 있고, 같은 족보일 때 비교하기 위한 제일 높은 카드도 쉽게 찾을 수 있다.
     black_value.sort(reverse=True)
     white_value.sort(reverse=True)
 
