@@ -220,3 +220,4 @@ ACM ICPC에 출전하고 싶다면 점수 계산법을 알아야 한다. 경시 
 
 #### >> 결과
 
+<img width="500" alt="스크린샷 2020-02-06 07 39 23" src="https://user-images.githubusercontent.com/50854729/73889890-06959180-48b4-11ea-8b23-4c6c4f7fef18.png">
